@@ -1,0 +1,11 @@
+pre{ line-height: 125%; }
+td.linenos .normal, span.linenos{ color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special, span.linenos.special{ color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }   
+.hll{ background-color: #ffffcc }
+.c, .ch, .cm, .cp, .cpf, .c1, .cs{ color: #b9ffd1; font-style: italic }
+.err, .k, .kc, .kd, .kn, .kp, .kr, .kt, .m, .mb, .mf, .mh, .mi, .mo, .il{ color: #00a8fd }
+.g, .gd, .ge, .gr, .gh, .gi, .go, .gp, .gs, .gu, .gt{ color: #ffe2f3 }
+.n, .na, .nb, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nx, .py, .nt, .nv, .bp, .fm, .vc, .vg, .vi, .vm{ color: #fb009c }
+.o, .ow{ color: #fc78c9 }
+.s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss{ color: #3cf994 }
+.nc{ color: #fdb5e1 }
