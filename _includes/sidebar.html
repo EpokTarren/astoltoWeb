@@ -1,0 +1,8 @@
+<h2>Categories</h2>
+<ul>
+	{% for category in site.categories %}
+	<a href="{{ category.permalink | relative_url }}">
+		<li><span>{{ category.title }}</span></li>
+	</a>
+	{% endfor %}
+</ul>

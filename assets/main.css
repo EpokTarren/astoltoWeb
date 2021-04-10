@@ -1,0 +1,132 @@
+:root {
+	font-size: large;
+	font-family: sans-serif, Arial, Helvetica;
+	--bg: #261b22;
+	--bg2: #33242d;
+	--bg3: #402d38;
+	--plain: #eeeeee;
+	--accent: #ff80cc;
+	color: var(--plain);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--accent);
+}
+
+a {
+	color: var(--accent);
+	opacity: 0.9;
+	transition: 0.2s linear;
+	text-decoration: none;
+}
+
+a:link:hover {
+	opacity: 1;
+}
+
+main div:not(main > :first-child) ul li::before {
+	color: var(--accent);
+	content: '•';
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: 1em;
+}
+
+pre,
+:not(pre) > code {
+	background: #00000040;
+	border-radius: 1em;
+	padding: 0 0.5em;
+}
+
+pre {
+	padding: 0.5em;
+	border: 1pt var(--accent) solid;
+}
+
+hr {
+	border: none;
+	border-top: 2pt solid var(--accent);
+	margin: 2rem 0;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background: var(--bg);
+	margin: 0;
+}
+
+main {
+	margin: auto;
+	width: calc(100vw - 2rem);
+	max-width: 120vh;
+	min-height: calc(100vh - 11.5rem);
+	display: grid;
+	grid-template-columns: 10rem auto;
+	gap: 2pt;
+	background: var(--accent);
+}
+
+main > div {
+	padding: 1rem;
+	background: var(--bg2);
+}
+
+@media (max-width: 120vh) {
+	main {
+		grid-template-columns: 1fr;
+	}
+}
+
+main > :first-child :is(li, a, span, ul) {
+	margin: 0;
+	padding: 0;
+	font-size: 1.3rem;
+}
+
+main > :first-child li {
+	padding: 0.2em;
+	border-radius: 0.5em;
+	margin-bottom: 1rem;
+}
+
+main > :first-child li:hover {
+	background-color: var(--bg3);
+}
+
+nav {
+	margin-bottom: 0.5rem;
+}
+
+nav a {
+	display: inline-block;
+	flex-grow: 1;
+	display: grid;
+	place-items: center;
+	height: 3rem;
+	font-size: 2rem;
+	width: 100%;
+	background: var(--bg2);
+}
+
+nav a:hover {
+	background-color: var(--bg3);
+}
+
+footer {
+	margin-top: 0.5rem;
+	background: var(--bg2);
+	padding: 1rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-evenly;
+}
