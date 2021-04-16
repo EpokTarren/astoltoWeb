@@ -4,3 +4,4 @@ collections_dir: collections
 collections:
   categories:
     output: true
+hue: 324

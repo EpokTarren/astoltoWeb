@@ -1,11 +1,12 @@
 :root {
 	font-size: large;
 	font-family: sans-serif, Arial, Helvetica;
-	--bg: #261b22;
-	--bg2: #33242d;
-	--bg3: #402d38;
+	--hue: 324;
+	--bg: hsl(var(--hue), 17%, 13%);
+	--bg2: hsl(var(--hue), 17%, 17%);
+	--bg3: hsl(var(--hue), 17%, 21%);
 	--plain: #eeeeee;
-	--accent: #ff80cc;
+	--accent: hsl(var(--hue), 100%, 75%);
 	color: var(--plain);
 }
 
