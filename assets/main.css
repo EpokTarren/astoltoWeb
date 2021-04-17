@@ -10,6 +10,27 @@
 	color: var(--plain);
 }
 
+* {
+	scrollbar-color: hsl(var(--hue), 50%, 50%) var(--bg);
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: hsl(var(--hue), 50%, 50%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--accent);
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +65,7 @@ pre,
 	background: #00000040;
 	border-radius: 1em;
 	padding: 0 0.5em;
+	white-space: pre-wrap;
 }
 
 pre {
